@@ -17,7 +17,7 @@ def loopdirs(folder):
 
                 if searched_file in file:
 
-                    print(root + "--" + file)
+                    print(root + "\\" + file)
 
     except:
 
