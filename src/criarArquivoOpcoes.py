@@ -10,16 +10,20 @@ def opcaoNAO():
 
     print("O arquivo {}.{} foi criado com sucesso.".format(nomeArquivo, formatoArquivo))
 
+
+
     print("\n===============================================================\n")
+
+
 
     escreverArquivo = input(str("Você deseja escrever alguma informação dentro do arquivo? Digite S para sim ou N para não:\n"))
 
     if escreverArquivo == "S":
 
         descricaoArquivo = input(str("Escreva o que deve ser inserido no arquivo:\n"))
-        arquivo.write(descricaoArquivo+"\n")
+        arquivo.write(descricaoArquivo)
 
-        print("A descrição '{}' foi inserida com sucesso.\n".format(descricaoArquivo))
+        print("\nA descrição '{}' foi inserida com sucesso.\n".format(descricaoArquivo))
 
     elif escreverArquivo == "N":
         print("Programa encerrado.")
@@ -38,4 +42,23 @@ def opcaoSIM():
     arquivo = open(nomeDiretorio+nomeArquivo+"."+formatoArquivo, "a")
 
     print("O arquivo {}.{} foi criado com sucesso no diretorio {}.".format(nomeArquivo, formatoArquivo, nomeDiretorio))
+
+
+
+    print("\n===============================================================\n")
+
+    
+
+    escreverArquivo = input(str("Você deseja escrever alguma informação dentro do arquivo? Digite S para sim ou N para não:\n"))
+
+    if escreverArquivo == "S":
+
+        descricaoArquivo = input(str("Escreva o que deve ser inserido no arquivo:\n"))
+        arquivo.write(descricaoArquivo)
+
+        print("\nA descrição '{}' foi inserida com sucesso.\n".format(descricaoArquivo))
+
+    elif escreverArquivo == "N":
+        print("Programa encerrado.")
+        print("===============================================================\n")
 
