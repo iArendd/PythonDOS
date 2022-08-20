@@ -1,4 +1,8 @@
 import os
 
-arquivo = open("contatos.txt", "a")
-arquivo.write("Ola, mundo!")
+def gerarArquivo():
+
+    arquivo = open("contatos.txt", "a")
+    #arquivo.write("Ola, mundo!")
+
+gerarArquivo()
