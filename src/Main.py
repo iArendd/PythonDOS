@@ -9,12 +9,12 @@ def escolherOpcao(escolha):
 
     if(escolha == "--help"):
         helpScript.helpComands()
-        escolha = input(str("\nDigite um comando para ser executado. Caso não conheça os comandos, digite --help para listar as funcionalidades: \n"))
+        escolha = input(str("\nEscolha um comando para ser executado ou digite qualquer letra para encerrar o programa\n"))
         escolherOpcao(escolha)
-        print("\n======================================================")
+        print("======================================================\n")
         escolha = ""
-        escolha = input(str("\nDigite um comando para ser executado. Caso não conheça os comandos, digite --help para listar as funcionalidades: \n"))
         escolherOpcao(escolha)
+
 
     else:
     
@@ -25,6 +25,7 @@ def escolherOpcao(escolha):
 
             case "--createFile":
                 return criaArquivo.gerarArquivo()
+
 
 escolherOpcao(escolha)
 
