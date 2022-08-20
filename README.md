@@ -20,7 +20,12 @@
         Assim que o usuário declara o nome, a pasta é criada dentro de um diretório padrão chamado 'pastasCriadas'.
         
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        02.
+        02.Quando o usuário solicita a exclusão de uma pasta, o programa pergunta:
+            -O nome do diretório junto com a pasta que deseja ser excluída.
+
+        Assim que o usuário declara, o programa verifica se o diretório existe.
+        Se existir, o programa verifica se a pasta possuí arquivos dentro, se existir arquivos ele excluí todos os arquivos e a pasta, se não existir ele escluí apenas a pasta.
+        Se o diretório não existir, o programa informa que o diretório mencionado não existe.
 
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         03.Quando o usuário solicita a criação de um arquivo, o programa pergunta:
@@ -36,7 +41,7 @@
                 -O que deve ser escrito dentro do arquivo.
 
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        05.O sistema pergunta:
+        05.Quando o usuário solicita a exclusão do arquivo, o sistema pergunta:
             -Qual diretório que o arquivo a ser escluído está localizado.
 
         Assim que o diretório é informado, todos os arquivos do diretório selecionado são mostrados, e então o sistema pergunta:

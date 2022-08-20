@@ -16,18 +16,3 @@ def excluirPasta():
 
     else:
         print("Esse diretório não existe.")
-
-
-excluirPasta()
-
-
-
-
-
-
-
-
-
-'''if(temConteudo == True):
-    shutil.rmtree()
-'''
