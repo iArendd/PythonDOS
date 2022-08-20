@@ -1,17 +1,17 @@
-import os
+import criarArquivoOpcoes
 
 def gerarArquivo():
 
-    gerarArquivoEscolha = input(str("\nO arquivo que você deseja criar será inserido na pasta raiz, você deseja inserir em uma pasta específica? Digite SI para sim ou NO para não.\n"))
+    gerarArquivoEscolha = input(str("\nO arquivo que você deseja criar será inserido na pasta raiz, você deseja inserir em uma pasta específica? Digite S para sim ou N para não.\n"))
 
-    if gerarArquivoEscolha == "NO":
+    if gerarArquivoEscolha == "N":
         
-        nomeArquivo = input(str("\nDigite o nome do arquivo a ser criado:\n"))
-        formatoArquivo = input(str("\nDigite a extenção do tipo do arquivo a ser criado:\n"))
+        return criarArquivoOpcoes.opcaoNAO()
 
-        arquivo = open(nomeArquivo+"."+formatoArquivo, "a")
+    elif gerarArquivoEscolha == "S":
 
-        print("O arquivo {}.{} foi criado com sucesso.".format(nomeArquivo, formatoArquivo))
+        return criarArquivoOpcoes.opcaoSIM()
+
 
     else:
         print("Nada")
