@@ -59,11 +59,12 @@
         01 - [x] - Script que cria uma pasta.
         02 - [x] - Script que cria um arquivo.
         03 - [x] - Script que escreve no arquivo criado.
-        04 - [ ] - Script que excluí um arquivo.
-        05 - [ ] - Script que excluí uma pasta.
-        06 - [ ] - Script que mostra o diretório de um arquivo específico.
+        04 - [x] - Script que excluí um arquivo.
+        05 - [x] - Script que excluí uma pasta.
+        06 - [x] - Script que mostra o diretório de um arquivo específico.
         07 - [x] - Script que mostra as possíveis opções a serem executadas.
         08 - [ ] - Em todos os scripts que envolvem arquivos, deverá ser colocado uma verificação se o arquivo já existe.
+        09 - [ ] - Script que faz a busca de um determinado arquivo dentro de determinado diretório.
     
 
 # Descrição v.0.2.0:
