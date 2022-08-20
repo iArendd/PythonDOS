@@ -3,6 +3,7 @@ import helpScript
 import criaPasta
 import criaArquivo
 import excluiArquivo
+import excluiPasta
 
 
 escolha = input(str("\nDigite um comando para ser executado. Caso não conheça os comandos, digite --help para listar as funcionalidades: \n"))
@@ -31,6 +32,8 @@ def escolherOpcao(escolha):
             case "--deleteFile":
                 return excluiArquivo.excluirArquivo()
 
+            case "--deleteFolder":
+                return excluiPasta.excluirPasta()
 
 escolherOpcao(escolha)
 

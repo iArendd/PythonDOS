@@ -1,16 +1,24 @@
+from genericpath import isdir
 import os
-
-nomeDiretorio = " "
-nomeArquivo = "../pastasCriadas/teste1/teste.txt"
+import shutil
 
 
+def excluirPasta():
 
-if os.path.isfile(nomeArquivo):
-    os.remove(nomeArquivo)
-else:    ## Show an error ##
-    print("Erro: O arquivo '{}' não existe no diretório '{}'".format(nomeArquivo, nomeDiretorio))
+    nomeDiretorio = input(str("\nDigite o diretório junto com a pasta que você deseja excluir, exemplo: ../pastaPrincipal/pastaSecundaria/pastaParaRemover\n"))
+
+    if isdir(nomeDiretorio) == True:
+
+        if len(os.listdir(nomeDiretorio)) == 0:
+            os.rmdir(nomeDiretorio)
+        else:    
+            shutil.rmtree(nomeDiretorio)
+
+    else:
+        print("Esse diretório não existe.")
 
 
+excluirPasta()
 
 
 
