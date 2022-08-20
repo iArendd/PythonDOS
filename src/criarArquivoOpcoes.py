@@ -13,6 +13,7 @@ def opcaoNAO():
 #---------------------------------------------------------------------------------
 
 def opcaoSIM():
+    
     nomeDiretorio = input(str("\nDigite o diretório da pasta que você deseja criar o arquivo. Exemplo: 'primeiraPasta/segundaPasta/terceiraPasta/' \n"))
 
     nomeArquivo = input(str("\nDigite o nome do arquivo a ser criado:\n"))

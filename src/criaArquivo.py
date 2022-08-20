@@ -1,20 +1,30 @@
 import criarArquivoOpcoes
 
+
 def gerarArquivo():
 
-    gerarArquivoEscolha = input(str("\nO arquivo que você deseja criar será inserido na pasta raiz, você deseja inserir em uma pasta específica? Digite S para sim ou N para não.\n"))
+    def decisaoGerarArquivo():
 
-    if gerarArquivoEscolha == "N":
-        
-        return criarArquivoOpcoes.opcaoNAO()
+        gerarArquivoEscolha = input(str())
+            
+        if gerarArquivoEscolha == "N":
+            
+            return criarArquivoOpcoes.opcaoNAO()
 
-    elif gerarArquivoEscolha == "S":
+        elif gerarArquivoEscolha == "S":
 
-        return criarArquivoOpcoes.opcaoSIM()
+            return criarArquivoOpcoes.opcaoSIM()
+
+        elif gerarArquivoEscolha == "SAIR":
+            print("Programa encerrado.")
+
+        else:
+            print("Ação interrompida! Digite um comando válido:")
+            return decisaoGerarArquivo()
 
 
-    else:
-        print("Nada")
+    gerarArquivoEscolha = print("\nO arquivo que você deseja criar será inserido na pasta raiz, você deseja inserir em uma pasta específica? Digite S para sim / N para não ou SAIR para encerrar.\n")
+    decisaoGerarArquivo()
 
     #arquivo = open("pastasCriadas/contatos.txt", "a")
     #arquivo.write("Ola, mundo!")
