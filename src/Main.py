@@ -4,8 +4,7 @@ import criaPasta
 import criaArquivo
 import excluiArquivo
 import excluiPasta
-
-
+import buscarArquivo
 
 
 versionScript = str("v.0.1.0")
@@ -43,6 +42,9 @@ def escolherOpcao(escolha):
 
             case "--deleteFolder":
                 return excluiPasta.excluirPasta()
+
+            case "--findFile":
+                return buscarArquivo.encontrarArquivo()
 
 escolherOpcao(escolha)
 
