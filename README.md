@@ -65,6 +65,7 @@
         07 - [x] - Script que mostra as possíveis opções a serem executadas.
         08 - [ ] - Em todos os scripts que envolvem arquivos, deverá ser colocado uma verificação se o arquivo já existe.
         09 - [ ] - Script que faz a busca de um determinado arquivo dentro de determinado diretório.
+        10 - [ ] - Quando o --help é chamado, a versão do script é apresentada.
     
 
 # Descrição v.0.2.0:

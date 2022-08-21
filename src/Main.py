@@ -6,6 +6,12 @@ import excluiArquivo
 import excluiPasta
 
 
+
+
+versionScript = str("v.0.1.0")
+
+
+
 escolha = input(str("\nDigite um comando para ser executado. Caso não conheça os comandos, digite --help para listar as funcionalidades: \n"))
 
 def escolherOpcao(escolha):
@@ -22,6 +28,9 @@ def escolherOpcao(escolha):
     else:
     
         match escolha:
+
+            case "--version":
+                return print("\nVersão do código: {}\n".format(versionScript))
 
             case "--createFolder":
                 return criaPasta.gerarPasta()
