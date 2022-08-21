@@ -5,6 +5,7 @@ import criaArquivo
 import excluiArquivo
 import excluiPasta
 import buscarArquivo
+import comandoInvalido
 
 
 versionScript = str("v.0.1.0")
@@ -23,6 +24,8 @@ def escolherOpcao(escolha):
         escolha = ""
         escolherOpcao(escolha)
 
+    elif(escolha == "--stop"):
+        escolha = "encerrado"
 
     else:
     
@@ -46,7 +49,18 @@ def escolherOpcao(escolha):
             case "--findFile":
                 return buscarArquivo.encontrarArquivo()
 
-escolherOpcao(escolha)
+            case _:
+                return comandoInvalido.erroComando()
+                
+
+if(escolha == "encerrado"):
+
+    pass
+
+else:
+    escolherOpcao(escolha)
+
+
 
 
 

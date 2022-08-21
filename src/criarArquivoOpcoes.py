@@ -14,20 +14,29 @@ def opcaoNAO():
 
     print("\n===============================================================\n")
 
+    trigger = True
 
+    while trigger:
 
-    escreverArquivo = input(str("Você deseja escrever alguma informação dentro do arquivo? Digite S para sim ou N para não:\n"))
+        escreverArquivo = input(str("Você deseja escrever alguma informação dentro do arquivo? Digite S para sim ou N para não:\n"))
 
-    if escreverArquivo == "S":
+        if escreverArquivo == "S":
 
-        descricaoArquivo = input(str("Escreva o que deve ser inserido no arquivo:\n"))
-        arquivo.write(descricaoArquivo)
+            descricaoArquivo = input(str("Escreva o que deve ser inserido no arquivo:\n"))
+            arquivo.write(descricaoArquivo)
 
-        print("\nA descrição '{}' foi inserida com sucesso.\n".format(descricaoArquivo))
+            print("\nA descrição '{}' foi inserida com sucesso.\n".format(descricaoArquivo))
 
-    elif escreverArquivo == "N":
-        print("Programa encerrado.")
-        print("===============================================================\n")
+            trigger = False
+
+        elif escreverArquivo == "N":
+            print("Programa encerrado.")
+            print("===============================================================\n")
+            trigger = False
+
+        else:
+            print("Comando inválido, digite novamente:\n")
+            trigger = True
 
 
 #---------------------------------------------------------------------------------
