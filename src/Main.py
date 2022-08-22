@@ -11,58 +11,41 @@ import comandoInvalido
 versionScript = str("v.0.1.0")
 
 
-
 escolha = input(str("\nDigite um comando para ser executado. Caso não conheça os comandos, digite --help para listar as funcionalidades: \n"))
 
-def escolherOpcao(escolha):
 
-    if(escolha == "--help"):
-        helpScript.helpComands()
-        escolha = input(str("\nEscolha um comando para ser executado ou digite qualquer letra para encerrar o programa\n"))
-        escolherOpcao(escolha)
-        print("======================================================\n")
-        escolha = ""
-        escolherOpcao(escolha)
+if(escolha == "--version"):
 
-    elif(escolha == "--stop"):
-        escolha = "encerrado"
+    print("\nVersão do código: {}\n".format(versionScript))
 
-    else:
-    
-        match escolha:
+elif(escolha == "--help"):
 
-            case "--version":
-                return print("\nVersão do código: {}\n".format(versionScript))
+    helpScript.helpComands()
 
-            case "--createFolder":
-                return criaPasta.gerarPasta()
+elif(escolha == "--stop"):
 
-            case "--createFile":
-                return criaArquivo.gerarArquivo()
+    print("Programa encerrado.")
 
-            case "--deleteFile":
-                return excluiArquivo.excluirArquivo()
+elif(escolha == "--createFolder"):
 
-            case "--deleteFolder":
-                return excluiPasta.excluirPasta()
+    criaPasta.gerarPasta()
 
-            case "--findFile":
-                return buscarArquivo.encontrarArquivo()
+elif(escolha == "--createFile"):
 
-            case _:
-                return comandoInvalido.erroComando()
-                
+    criaArquivo.gerarArquivo()
 
-if(escolha == "encerrado"):
+elif(escolha == "--deleteFile"):
 
-    pass
+    excluiArquivo.excluirArquivo()
+
+elif(escolha == "--deleteFolder"):
+
+    excluiPasta.excluirPasta()
+
+elif(escolha == "--findFile"):
+
+    buscarArquivo.encontrarArquivo()
 
 else:
-    escolherOpcao(escolha)
 
-
-
-
-
-
-    
+    print("Comando inválido!")
