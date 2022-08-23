@@ -3,7 +3,7 @@
 # Descrição v.0.1.0:
 
     ESSE SCRIPT TEM COMO FUNCIONALIDADES:
-        
+
         01.Criar uma pasta.
         02.Excluir uma pasta.
         03.Criar um arquivo.
